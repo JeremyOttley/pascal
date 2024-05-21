@@ -1,4 +1,4 @@
-program EvenOrOdd;
+program IsItOdd;
 {$mode objfpc}{$H+}{$J-}
 {$APPTYPE CONSOLE}
 var
