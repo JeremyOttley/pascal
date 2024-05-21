@@ -1,6 +1,7 @@
 program RemoveHyphens;
 
-{$mode objfpc}{$H+}
+{$mode objfpc}{$H+}{$J-}
+{$APPTYPE CONSOLE}
 
 uses
   SysUtils;
