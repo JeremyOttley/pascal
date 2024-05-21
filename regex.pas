@@ -1,5 +1,6 @@
 program Titlecase;
-
+{$mode objfpc}{$H+}{$J-}
+{$APPTYPE CONSOLE}
 uses
   RegExpr;
 
