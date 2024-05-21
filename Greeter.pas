@@ -1,5 +1,6 @@
 program Greeter;
-
+{$mode objfpc}{$H+}{$J-}
+{$APPTYPE CONSOLE}
 var
   userName: string;
 
