@@ -1,4 +1,4 @@
-program GreetUser;
+program Greeter;
 
 var
   userName: string;
