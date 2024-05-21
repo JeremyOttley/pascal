@@ -5,13 +5,16 @@ program RemoveHyphens;
 uses
   SysUtils;
 
-var
-  isbnRaw, isbn: string;
+function isbnStrip (i: string): string;
+begin
+  try
+    isbnStrip := StringReplace(i, '-', '', [rfReplaceAll, rfIgnoreCase]);
+    except
+      on E: Exception do
+        Writeln(E.ClassName, ': ', E.Message);
+    end;
+end;
 
 begin
-  Write('Please enter an ISBN-13: ');
-  ReadLn(isbnRaw); //read user input into variable
-  
-  isbn := StringReplace(isbnRaw, '-', '', [rfReplaceAll, rfIgnoreCase]);
-  WriteLn(isbn);
+  writeln(isbnStrip('978-1-4780-2737-9'));
 end.
