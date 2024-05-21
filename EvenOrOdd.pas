@@ -1,4 +1,4 @@
-program OddNumber;
+program EvenOrOdd;
 
 var
 	input: Integer;
