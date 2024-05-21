@@ -1,5 +1,6 @@
 program EvenOrOdd;
-
+{$mode objfpc}{$H+}{$J-}
+{$APPTYPE CONSOLE}
 var
 	input: Integer;
 
